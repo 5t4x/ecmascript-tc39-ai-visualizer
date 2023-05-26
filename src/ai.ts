@@ -158,7 +158,7 @@ async function getHTML(proposalID: string) {
       `When writing sections, remember that the section body can support markdown.\n` +
       `Please write the code to continue this JSON and fulfill the prompt: ${assistantPrefix}`;
 
-    console.log("making API request");
+    console.log(`making API request for proposal ${proposalID}`);
 
     const gpt = await openai.createChatCompletion({
       messages: [
