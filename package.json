@@ -1,22 +1,37 @@
 {
-  "name": "ai-fun",
+  "name": "ecmascript-tc39-ai-visualizer",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "init-db": "node init-db.mjs"
   },
   "dependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.2",
+    "@octokit/rest": "^19.0.11",
+    "@types/better-sqlite3": "^7.6.4",
     "@types/node": "20.2.3",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
+    "@types/react-syntax-highlighter": "^15.5.7",
+    "@typescript-eslint/eslint-plugin": "^5.59.7",
+    "better-sqlite3": "^8.4.0",
+    "bootswatch": "^5.2.3",
+    "encoding": "^0.1.13",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
-    "next": "13.4.3",
+    "gpt-tokenizer": "^2.0.0",
+    "jsonschema": "^1.4.1",
+    "next": "^13.4.4",
+    "openai": "^3.2.1",
+    "prettier": "^2.8.8",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-markdown": "^8.0.7",
+    "react-syntax-highlighter": "^15.5.0",
     "typescript": "5.0.4"
   }
 }

@@ -1,0 +1,7 @@
+CREATE TABLE GPT (
+  ID TEXT NOT NULL UNIQUE,
+ -- JSON proposal
+  PROPOSAL TEXT NOT NULL,
+ -- JSON AI generated page
+  PAGE TEXT NOT NULL
+);
