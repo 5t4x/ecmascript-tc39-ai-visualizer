@@ -1,5 +1,6 @@
 import { fetchProposals } from "../proposals";
 import Link from "next/link";
+import { ReactMarkdown } from "react-markdown/lib/react-markdown";
 
 export default async function Index() {
   const proposals = await fetchProposals();
@@ -27,7 +28,9 @@ export default async function Index() {
                     <small>{new Date(p.pushed_at).toDateString()}</small>
                   )}
                 </div>
-                <p className="mb-1">{p.description}</p>
+                <p className="mb-1">
+                  <ReactMarkdown>{p.description}</ReactMarkdown>
+                </p>
                 <small>Stage {p.stage}</small>
               </Link>
             ))}
